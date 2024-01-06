@@ -18,4 +18,10 @@
     <Gender>Ж</Gender>
     <Price>3000</Price>
   </Hair>
+  <Hair>
+    <KodS></KodS>
+    <Name>группировка</Name>
+    <Gender></Gender>
+    <Price></Price>
+  </Hair>
 </Hairs>

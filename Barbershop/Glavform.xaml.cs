@@ -316,7 +316,7 @@ namespace Barbershop
             if (counter == 2)
             {
                 IEnumerable<XElement> tests =
-                    from el in doc1.Elements("Clients").Elements("Client")
+                    from el in doc2.Elements("Clients").Elements("Client")
                     where (string)el.Element("KodC") == dobavlenie1.Text
                     select el;
                 foreach (XElement el in tests)
@@ -364,7 +364,7 @@ namespace Barbershop
             if (counter == 3)
             {
                 IEnumerable<XElement> tests =
-                    from el in doc1.Elements("Works").Elements("Work")
+                    from el in doc3.Elements("Works").Elements("Work")
                     where (string)el.Element("KodR") == dobavlenie1.Text
                     select el;
                 foreach (XElement el in tests)
@@ -460,7 +460,7 @@ namespace Barbershop
             if (counter == 2)
             {
                 IEnumerable<XElement> tests =
-                    from el in doc1.Elements("Clients").Elements("Cleint")
+                    from el in doc2.Elements("Clients").Elements("Cleint")
                     where (string)el.Element("KodC") == dobavlenie1.Text
                     select el;
                 foreach (XElement el in tests)
@@ -511,7 +511,7 @@ namespace Barbershop
             if (counter == 3)
             {
                 IEnumerable<XElement> tests =
-                    from el in doc1.Elements("Works").Elements("Work")
+                    from el in doc3.Elements("Works").Elements("Work")
                     where (string)el.Element("KodR") == dobavlenie1.Text
                     select el;
                 foreach (XElement el in tests)
@@ -636,6 +636,19 @@ namespace Barbershop
 
                         dg.ItemsSource = gen;
                     }
+
+                if (dobavlenie1.Text == "" && dobavlenie2.Text == "первый" && dobavlenie3.Text == "" && dobavlenie4.Text == "" && dobavlenie6.Text == "" && dobavlenie2.Text != null && dobavlenie5.Text == "")
+                {
+                    var gen = (from x in doc2.Element("Clients").Elements("Client")
+                               where (string)x.Element("Surname") == dobavlenie2.Text
+                               group x by x.Element("Surname").Value into g
+                               select new
+                               {
+                                   Фамилия = g.First().Element("Surname").Value,
+                               }).ToList();
+
+                    dg.ItemsSource = gen;
+                }
 
             }
                 if (counter == 3)

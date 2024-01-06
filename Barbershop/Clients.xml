@@ -40,4 +40,12 @@
     <Gender>М</Gender>
     <PostC>1</PostC>
   </Client>
+  <Client>
+    <KodC>7</KodC>
+    <Surname>первый</Surname>
+    <NameC>первый</NameC>
+    <MiddleName>первый</MiddleName>
+    <Gender>м</Gender>
+    <PostC>1</PostC>
+  </Client>
 </Clients>
