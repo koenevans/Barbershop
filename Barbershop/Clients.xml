@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Clients>
+  <Client>
+    <KodC>1</KodC>
+    <Surname>Королев</Surname>
+    <NameC>Евгений</NameC>
+    <MiddleName>Владимирович</MiddleName>
+    <Gender>М</Gender>
+    <PostC>0</PostC>
+  </Client>
+  <Client>
+    <KodC>2</KodC>
+    <Surname>Горная</Surname>
+    <NameC>Алена</NameC>
+    <MiddleName>Витальевна</MiddleName>
+    <Gender>Ж</Gender>
+    <PostC>1</PostC>
+  </Client>
+  <Client>
+    <KodC>3</KodC>
+    <Surname>Железнова</Surname>
+    <NameC>Лидия</NameC>
+    <MiddleName>Олеговна</MiddleName>
+    <Gender>Ж</Gender>
+    <PostC>0</PostC>
+  </Client>
+  <Client>
+    <KodC>4</KodC>
+    <Surname>Александрова</Surname>
+    <NameC>Виктория</NameC>
+    <MiddleName>Валерьевна</MiddleName>
+    <Gender>Ж</Gender>
+    <PostC>0</PostC>
+  </Client>
+  <Client>
+    <KodC>6</KodC>
+    <Surname>Зинитов</Surname>
+    <NameC>Илья</NameC>
+    <MiddleName>Владимирович</MiddleName>
+    <Gender>М</Gender>
+    <PostC>1</PostC>
+  </Client>
+</Clients>

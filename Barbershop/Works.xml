@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Works>
+  <Work>
+    <KodR>1</KodR>
+    <KodS>1</KodS>
+    <KodC>1</KodC>
+    <Date>14/06/2023</Date>
+  </Work>
+  <Work>
+    <KodR>2</KodR>
+    <KodS>2</KodS>
+    <KodC>2</KodC>
+    <Date>14/06/2023</Date>
+  </Work>
+  <Work>
+    <KodR>4</KodR>
+    <KodS>3</KodS>
+    <KodC>4</KodC>
+    <Date>15/06/2023</Date>
+  </Work>
+  <Work>
+    <KodR>5</KodR>
+    <KodS>3</KodS>
+    <KodC>5</KodC>
+    <Date>15/06/2023</Date>
+  </Work>
+</Works>
