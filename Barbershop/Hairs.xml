@@ -19,9 +19,9 @@
     <Price>3000</Price>
   </Hair>
   <Hair>
-    <KodS></KodS>
-    <Name>группировка</Name>
-    <Gender></Gender>
-    <Price></Price>
+    <KodS>4</KodS>
+    <Name>Полубокс</Name>
+    <Gender>М</Gender>
+    <Price>350</Price>
   </Hair>
 </Hairs>

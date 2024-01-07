@@ -61,7 +61,7 @@ namespace Barbershop
             Clients.Visibility = Visibility.Hidden;
             Works.Visibility = Visibility.Hidden;
 
-            doc1 = XDocument.Load("C:\\Users\\Полоцкий Константин\\source\\repos\\Barbershop\\Barbershop\\Hairs.xml");
+            doc1 = XDocument.Load("../../Hairs.xml");
             var HAIRS = (from x in doc1.Element("Hairs").Elements("Hair")
                          orderby x.Element("KodS").Value
                          select new
@@ -94,7 +94,7 @@ namespace Barbershop
             Clients.Visibility = Visibility.Visible;
             Works.Visibility = Visibility.Hidden;
 
-            doc2 = XDocument.Load("C:\\Users\\Полоцкий Константин\\source\\repos\\Barbershop\\Barbershop\\Clients.xml");
+            doc2 = XDocument.Load("../../Clients.xml");
             var CLIENTS = (from x in doc2.Element("Clients").Elements("Client")
                            orderby x.Element("KodC").Value
                            select new
@@ -128,7 +128,7 @@ namespace Barbershop
             Clients.Visibility = Visibility.Hidden;
             Works.Visibility = Visibility.Visible;
 
-            doc3 = XDocument.Load("C:\\Users\\Полоцкий Константин\\source\\repos\\Barbershop\\Barbershop\\Works.xml");
+            doc3 = XDocument.Load("../../Works.xml");
             var WORKS = (from x in doc3.Element("Works").Elements("Work")
                          orderby x.Element("KodR").Value
                          select new
@@ -186,7 +186,7 @@ namespace Barbershop
                     new XElement("Gender", dobavlenie3.Text),
                     new XElement("Price", dobavlenie4.Text)));
 
-                doc1.Save("C:\\Users\\Полоцкий Константин\\source\\repos\\Barbershop\\Barbershop\\Hairs.xml");
+                doc1.Save("../../Hairs.xml");
 
                 MessageBox.Show("Новые данные добавлены!");
 
@@ -216,7 +216,7 @@ namespace Barbershop
                     new XElement("Gender", dobavlenie5.Text),
                     new XElement("PostC", dobavlenie6.Text)));
 
-                doc2.Save("C:\\Users\\Полоцкий Константин\\source\\repos\\Barbershop\\Barbershop\\Clients.xml");
+                doc2.Save("../../Clients.xml");
 
                 MessageBox.Show("Новые данные добавлены!");
 
@@ -246,7 +246,7 @@ namespace Barbershop
                     new XElement("KodC", dobavlenie3.Text),
                     new XElement("Date", dobavlenie4.Text)));
 
-                doc3.Save("C:\\Users\\Полоцкий Константин\\source\\repos\\Barbershop\\Barbershop\\Works.xml");
+                doc3.Save("../../Works.xml");
 
                 MessageBox.Show("Новые данные добавлены!");
 
@@ -280,7 +280,7 @@ namespace Barbershop
                 {
                     doc1.Elements("Hairs").Elements("Hair").First(b => ((string)b.Element("KodS")) == dobavlenie1.Text).Remove();
 
-                    doc1.Save("C:\\Users\\Полоцкий Константин\\source\\repos\\Barbershop\\Barbershop\\Hairs.xml");
+                    doc1.Save("../../Hairs.xml");
 
                     var HAIRS = (from x in doc1.Element("Hairs").Elements("Hair")
                                  orderby x.Element("KodS").Value
@@ -326,7 +326,7 @@ namespace Barbershop
                 {
                     doc2.Elements("Clients").Elements("Client").First(b => ((string)b.Element("KodC")) == dobavlenie1.Text).Remove();
 
-                    doc2.Save("C:\\Users\\Полоцкий Константин\\source\\repos\\Barbershop\\Barbershop\\Clients.xml");
+                    doc2.Save("../../Clients.xml");
 
                     var CLIENTS = (from x in doc2.Element("Clients").Elements("Client")
                                    orderby x.Element("KodC").Value
@@ -374,7 +374,7 @@ namespace Barbershop
                 {
                     doc3.Elements("Works").Elements("Work").First(b => ((string)b.Element("KodR")) == dobavlenie1.Text).Remove();
 
-                    doc3.Save("C:\\Users\\Полоцкий Константин\\source\\repos\\Barbershop\\Barbershop\\Works.xml");
+                    doc3.Save("../../Works.xml");
 
                     var WORKS = (from x in doc3.Element("Works").Elements("Work")
                                  orderby x.Element("KodR").Value
@@ -425,7 +425,7 @@ namespace Barbershop
                     doc1.Elements("Hairs").Elements("Hair").First(b => ((string)b.Element("KodS")) == dobavlenie1.Text).SetElementValue("Gender", dobavlenie3.Text);
                     doc1.Elements("Hairs").Elements("Hair").First(b => ((string)b.Element("KodS")) == dobavlenie1.Text).SetElementValue("Price", dobavlenie4.Text);
 
-                    doc1.Save("C:\\Users\\Полоцкий Константин\\source\\repos\\Barbershop\\Barbershop\\Hairs.xml");
+                    doc1.Save("../../Hairs.xml");
 
                     var HAIRS = (from x in doc1.Element("Hairs").Elements("Hair")
                                  orderby x.Element("KodS").Value
@@ -474,7 +474,7 @@ namespace Barbershop
                     doc2.Elements("Clients").Elements("Client").First(b => ((string)b.Element("KodC")) == dobavlenie1.Text).SetElementValue("Gender", dobavlenie5.Text);
                     doc2.Elements("Clients").Elements("Client").First(b => ((string)b.Element("KodC")) == dobavlenie1.Text).SetElementValue("PostC", dobavlenie6.Text);
 
-                    doc2.Save("C:\\Users\\Полоцкий Константин\\source\\repos\\Barbershop\\Barbershop\\Clients.xml");
+                    doc2.Save("../../Clients.xml");
 
                     var CLIENTS = (from x in doc2.Element("Clients").Elements("Client")
                                    orderby x.Element("KodC").Value
@@ -523,7 +523,7 @@ namespace Barbershop
                     doc3.Elements("Works").Elements("Work").First(b => ((string)b.Element("KodR")) == dobavlenie1.Text).SetElementValue("KodC", dobavlenie3.Text);
                     doc3.Elements("Works").Elements("Work").First(b => ((string)b.Element("KodR")) == dobavlenie1.Text).SetElementValue("Date", dobavlenie4.Text);
 
-                    doc3.Save("C:\\Users\\Полоцкий Константин\\source\\repos\\Barbershop\\Barbershop\\Works.xml");
+                    doc3.Save("../../Works.xml");
 
                     var WORKS = (from x in doc3.Element("Works").Elements("Work")
                                  orderby x.Element("KodR").Value
@@ -600,14 +600,14 @@ namespace Barbershop
                                }).ToList();
 
                     dg.ItemsSource = gen;
-                }         
+                }
             }
 
                 if (counter == 2)
                 {
                     if (dobavlenie1 != null)
                     {
-                        var kod1 = (from x in doc2.Element("Clients").Elements("Client")
+                        var kod = (from x in doc2.Element("Clients").Elements("Client")
                                    where (string)x.Element("KodC") == dobavlenie1.Text || (string)x.Element("Surname") == dobavlenie2.Text || (string)x.Element("NameC") == dobavlenie3.Text || (string)x.Element("MiddleName") == dobavlenie4.Text || (string)x.Element("Gender") == dobavlenie5.Text || (string)x.Element("PostC") == dobavlenie6.Text
                                    select new
                                    {
@@ -620,7 +620,7 @@ namespace Barbershop
 
                                    }).ToList();
 
-                        dg.ItemsSource = kod1;
+                        dg.ItemsSource = kod;
                     }
 
                     if (dobavlenie1.Text == "" && dobavlenie2.Text == "" && dobavlenie3.Text == "" && dobavlenie4.Text == "" && dobavlenie6.Text == "" && dobavlenie5.Text != null)
@@ -637,17 +637,18 @@ namespace Barbershop
                         dg.ItemsSource = gen;
                     }
 
-                if (dobavlenie1.Text == "" && dobavlenie2.Text == "первый" && dobavlenie3.Text == "" && dobavlenie4.Text == "" && dobavlenie6.Text == "" && dobavlenie2.Text != null && dobavlenie5.Text == "")
+                if (dobavlenie1.Text == "" && dobavlenie2.Text != null && dobavlenie3.Text == "" && dobavlenie4.Text == "" && dobavlenie6.Text == "" && dobavlenie5.Text == "")
                 {
-                    var gen = (from x in doc2.Element("Clients").Elements("Client")
+                    var fam = (from x in doc2.Element("Clients").Elements("Client")
                                where (string)x.Element("Surname") == dobavlenie2.Text
                                group x by x.Element("Surname").Value into g
                                select new
                                {
-                                   Фамилия = g.First().Element("Surname").Value,
+                                   Фамилия = g.Key,
+                                   Количество = g.Count()
                                }).ToList();
 
-                    dg.ItemsSource = gen;
+                    dg.ItemsSource = fam;
                 }
 
             }
@@ -668,7 +669,20 @@ namespace Barbershop
 
                         dg.ItemsSource = kods;
                     }
-                }
+                    if (dobavlenie1.Text == "" && dobavlenie2.Text == "" && dobavlenie3.Text == "" && dobavlenie4.Text != null)
+                    {
+                        var dat = (from x in doc3.Element("Works").Elements("Work")
+                                   where (string)x.Element("Date") == dobavlenie4.Text
+                                   group x by x.Element("Date").Value into g
+                                   select new
+                                   {
+                                       Дата = g.Key,
+                                       Количество = g.Count()
+                                   }).ToList();
+
+                        dg.ItemsSource = dat;
+                    }
+            }
             }
         }
     }

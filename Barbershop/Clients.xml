@@ -25,14 +25,6 @@
     <PostC>0</PostC>
   </Client>
   <Client>
-    <KodC>4</KodC>
-    <Surname>Александрова</Surname>
-    <NameC>Виктория</NameC>
-    <MiddleName>Валерьевна</MiddleName>
-    <Gender>Ж</Gender>
-    <PostC>0</PostC>
-  </Client>
-  <Client>
     <KodC>6</KodC>
     <Surname>Зинитов</Surname>
     <NameC>Илья</NameC>
@@ -42,10 +34,10 @@
   </Client>
   <Client>
     <KodC>7</KodC>
-    <Surname>первый</Surname>
-    <NameC>первый</NameC>
-    <MiddleName>первый</MiddleName>
-    <Gender>м</Gender>
-    <PostC>1</PostC>
+    <Surname>Королев</Surname>
+    <NameC>Евгений</NameC>
+    <MiddleName>Владимирович</MiddleName>
+    <Gender>М</Gender>
+    <PostC>0</PostC>
   </Client>
 </Clients>
